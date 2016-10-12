@@ -1,0 +1,174 @@
+.float-left{ float: left}
+
+// datePicker
+#view-calendar{
+	.ui-datepicker{
+		width: 250px; padding: 20px 6px; background: #333a54;
+		-webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    
+		.ui-datepicker-calendar td{ padding: 0px 4px}
+		.ui-datepicker-header{ border-color: #3f4762}
+	}
+}
+
+/*---------------------------------------------------------------------------------------
+**	
+**	SELECT
+**
+----------------------------------------------------------------------------------------*/
+select.none-user{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.ui-select{
+	width: 100%; margin: 0px; padding: 0px; float: left; position: relative;
+	select{
+		width: 100%; float: left; margin: 0px; padding: 6px 10px; border-color: #d3dbe2; outline: none;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	}
+	&:after{
+		width: 0px;
+	    height: 0px;
+	    content: "";
+	    position: absolute;
+	    top: 15px;
+	    right: 15px;
+	    border-top: 4px solid #82888a;
+	    border-right: 4px solid transparent;
+	    border-left: 4px solid transparent;
+	    pointer-events: none;
+	}
+}
+
+/*---------------------------------------------------------------------------------------
+**	
+**	INPUT
+**
+----------------------------------------------------------------------------------------*/
+
+// check-box
+input[type="checkbox"].mycb-1 {
+    display:none;
+}
+input[type="checkbox"].mycb-1 + label span {
+    display:inline-block;
+    width:14px;
+    height:14px;
+    vertical-align:middle;
+    background:url(../images/check-box.png) 0px -14px no-repeat;
+    cursor:pointer;
+}
+input[type="checkbox"].mycb-1:checked + label span {
+    background:url(../images/check-box.png) left top no-repeat;
+}
+
+// placehoder
+input.myinput-t1::-webkit-input-placeholder {
+	color: #eaeaea;
+	font-family: Brandon-Regular;
+	font-size: 15px;
+}
+
+input.myinput-t1:-moz-placeholder { /* Firefox 18- */
+	color: #eaeaea;
+	font-family: Brandon-Regular;
+	font-size: 15px;
+}
+
+input.myinput-t1::-moz-placeholder {  /* Firefox 19+ */
+	color: #eaeaea; 
+	font-family: Brandon-Regular;
+	font-size: 15px;
+}
+
+input.myinput-t1:-ms-input-placeholder {  
+	color: #eaeaea;
+	font-family: Brandon-Regular;
+	font-size: 15px;
+}
+.error-1{
+    width: 100%;
+    float: left;
+    padding: 10px 102px 50px 120px;
+
+    .text{
+		width: 100%; float: left; margin: 0px; line-height: 30px; text-align: center; color: #fff; background: rgba(211, 28, 28, 0.78); border-radius: 3px;
+    }
+}
+
+.error-2{
+    width: 70%;
+    float: left;
+    padding: 0px;
+
+    .text{
+		width: 100%; float: left; margin: 0px; line-height: 30px; text-align: center; color: #fff; background: rgba(211, 28, 28, 0.78); border-radius: 3px;
+    }
+}
+
+.error-3{
+    width: 100%;
+    float: left;
+    padding: 0px;
+
+    .text{
+		width: 100%; float: left; margin: 0px; line-height: 30px; text-align: center; color: #fff; background: rgba(211, 28, 28, 0.78); border-radius: 3px; margin-bottom: 20px;
+    }
+}
+
+/* pagination-wp */
+.pagination-wp{
+    width: 100%; float: left; margin: 0px; padding: 0px; text-align: center; margin-top: 50px;
+    .pagination{
+        li{
+            a{
+                border: 0px; width: 42px; text-align: center; background: none; font-size: 14px; font-family: r0c0i-linotte-bold; color: #666;
+                &:hover{ color: #50a850}
+            }
+
+            span{
+                background: none; border: 0px; width: 42px; text-align: center;
+                &:hover{ background: none;}
+            }
+
+            &:first-child{
+                a{
+                    margin-right: 65px; width: 36px; height: 36px; line-height: 20px; border: 2px solid #ddd; text-align: center; border-radius: 18px; float: left; padding: 6px 10px;
+                }
+
+                span{
+                    margin-right: 65px; width: 36px; height: 36px; line-height: 20px; border: 2px solid #ddd; text-align: center; border-radius: 18px; float: left; padding: 6px 10px;
+                }
+            }
+
+            &:last-child{
+                a{
+                    margin-left: 65px; width: 36px; height: 36px; line-height: 20px; border: 2px solid #ddd; text-align: center; border-radius: 18px; float: left; padding: 6px 10px;
+                }
+
+                span{
+                    margin-left: 65px; width: 36px; height: 36px; line-height: 20px; border: 2px solid #ddd; text-align: center; border-radius: 18px; float: left; padding: 6px 10px;
+                }
+            }
+        }
+
+        li.active{
+            span{
+                border: 0px; width: 42px; text-align: center; background: none; background: #5bb75b ; border: 1px solid #50a850; font-size: 14px; font-family: r0c0i-linotte-bold; color: #fff; border-radius: 16px;
+            }
+        }
+    }
+}
+
+.tb{
+    width: 100%; float: left; padding: 10px 20px;
+    span{ width: 100%; float: left; text-align: center; background: red; color: #fff; padding: 7px; border-radius: 3px;}
+    .ss{ background: #007eff;}
+}

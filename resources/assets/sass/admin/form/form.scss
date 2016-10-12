@@ -1,0 +1,45 @@
+// form style 1.
+.left-form.style-1{
+	width: 66%; float: left; padding-right: 10px;
+	.item-left-form {
+	    width: 100%; float: left; background-color: white; border-radius: 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 20px 15px 0px 0px; margin-bottom: 30px;
+	   
+	    .form-group{
+			margin: 0px 0px 15px 0px;
+			 label{
+		    	color: #555; font-weight: normal;
+		    	.node-req{ color: red}
+		    }
+
+		    input[type="text"] { box-shadow: none; border-color: #d3dbe2; border-radius: 1px}
+		    input[type="password"] { box-shadow: none; border-color: #d3dbe2; border-radius: 1px}
+		    input[type="number"] { box-shadow: none; border-color: #d3dbe2; border-radius: 1px}
+		    textarea { box-shadow: none; border-color: #d3dbe2; border-radius: 1px; overflow: auto; resize: none; outline: none; min-height: 134px;}
+		}
+
+		.form-group.form-group-ck{
+			label{ text-align: left; margin-bottom: 10px;}
+		}
+		.delete-injection{
+			float: left; margin-top: 4px; cursor: pointer; font-size: 20px; color: #ddd;
+			&:hover{ color: red}
+		}
+		.delete-action-antenal{
+			float: left; margin-top: 4px; cursor: pointer; font-size: 20px; color: #ddd;
+			&:hover{ color: red}
+		}
+		.add-lich-kham{ padding: 5px 20px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; margin-top: 1px; background: #eaeaea; float: left;}
+	}
+}
+.right-form.style-1{
+    width: 34%; float: left; padding-left: 10px;
+	.item-right-form {
+	    width: 100%; float: left; background-color: #f5f6f7; border-radius: 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 20px 15px 0px 15px;
+		label{ color: #555; font-weight: normal; text-align: left; padding-bottom: 10px;}
+	}
+
+	.item-note p {
+	    padding: 0px 15px; float: left; width: 100%;
+	}
+}
+/*--------------------------------------------------------------------------*/

@@ -1,0 +1,58 @@
+body { width: 100%; height: 100%; font-family :roboto; font-size: 13px; color: #333; background: #ebeef0}
+@font-face { font-family: 'proxima-b'; font-style: normal; src: local('proxima bold'), local('proxima-bold'), url(../fonts/proxima-nova-bold.otf) format('woff'); }
+@font-face { font-family: 'roboto'; font-style: normal; src: local('roboto'), local('roboto'), url(../fonts/Roboto-Regular.ttf) format('woff'); }
+@font-face { font-family: 'roboto-b'; font-style: normal; src: local('roboto b'), local('roboto-a'), url(../fonts/Roboto-Bold.ttf) format('woff'); }
+@font-face { font-family: 'proxima'; font-style: normal; src: local('proxima Regular'), local('proxima-Regular'), url(../fonts/proxima-nova-regular.otf) format('woff'); }
+@font-face { font-family: 'proxima-a'; font-style: normal; src: local('proxima a'), local('proxima-a'), url(../fonts/proxima-nova-alt-condensed-regular.otf) format('woff'); }
+@font-face { font-family: 'proxima-sm'; font-style: normal; src: local('proxima sm'), local('proxima-sm'), url(../fonts/proxima-nova-semibold.otf) format('woff'); }
+@font-face { font-family: 'r0c0i-linotte-light'; font-style: normal; src: local('r0c0i-linotte-light'), local('r0c0i-linotte-light'), url(../fonts/r0c0i-linotte-light.ttf) format('woff'); }
+@font-face { font-family: 'r0c0i-linotte-heavy'; font-style: normal; src: local('r0c0i-linotte-heavy'), local('r0c0i-linotte-heavy'), url(../fonts/r0c0i-linotte-heavy.ttf) format('woff'); }
+@font-face { font-family: 'r0c0i-linotte-bold'; font-style: normal; src: local('r0c0i-linotte-bold'), local('r0c0i-linotte-bold'), url(../fonts/r0c0i-linotte-bold.ttf) format('woff'); }
+@font-face { font-family: 'r0c0i-linotte-regular'; font-style: normal; src: local('r0c0i-linotte-regular'), local('r0c0i-linotte-regular'), url(../fonts/r0c0i-linotte-regular.ttf) format('woff'); }
+@font-face { font-family: 'r0c0i-linotte-semi-bold'; font-style: normal; src: local('r0c0i-linotte-semi-bold'), local('r0c0i-linotte-semi-bold'), url(../fonts/r0c0i-linotte-semi-bold.ttf) format('woff'); }
+/*a {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	text-decoration:none;
+  	/* color: #343434;
+}*/
+.an{ display: none}
+a:hover, a:focus { text-decoration: none; /* color: #62b23f */; outline: 0;}
+::-webkit-input-placeholder { /* WebKit browsers */
+    /* color:    #979797;*/
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   /* color:    #979797;*/
+   opacity:  0.95;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   /* color:    #979797;*/
+   opacity:  0.95;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   /* color:    #979797;*/
+}
+.content-page{ width: 100%; float: left; margin: 0px; padding: 0px 0px 0px 230px}
+.node-req{ color: red;}
+$color_hover_a_1 : #f65004;
+$color_hover_btn : #f2491d;
+
+$bg_btn_2 : #6cb540;
+$color_hover_btn_2 : #5aa92a;
+
+$color_cate_community_1 : #5b65cf;
+$color_cate_community_2 : #0f84eb;
+$color_cate_community_3 : #30daa7;
+$color_cate_community_4 : #67cb4b;
+$color_cate_community_5 : #fab90b;
+$color_cate_community_6 : #ff5067;
+$color_cate_community_7 : #fe4444;
+
+$color_cate_community_bg_1 : #cbcdeb;
+$color_cate_community_bg_2 : #b4d6f3;
+$color_cate_community_bg_3 : #d2f4e7;
+$color_cate_community_bg_4 : #ddf1d5;
+$color_cate_community_bg_5 : #fcecca;
+$color_cate_community_bg_6 : #fbe8e6;
+$color_cate_community_bg_7 : #fcd6d3;

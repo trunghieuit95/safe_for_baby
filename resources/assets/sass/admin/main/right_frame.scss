@@ -1,0 +1,123 @@
+.right-content{
+	width:100%; margin: 0px; padding: 0px; float: left;
+	.right-header-wp{ width: 100%; position: fixed; top: 0px; right: 0px; padding: 0px 0px 0px 230px; z-index: 200; }
+
+	/* --- right-header --- */
+	.right-header{
+		height: 59px; border-bottom: 1px solid #dadddf; padding: 0px 20px 0px 15px; background: #fff; width:100%;
+		.left-h{
+			line-height: 59px; font-size: 20px; font-family: arial;
+			span{ color: #798c9c; }
+			i{ font-size: 18px; margin: 0px 7px 0px 0px;}
+		}
+
+		.right-h{
+			margin-top: 14px;
+			a.btn-back{
+				cursor: pointer; padding: 6px 15px; border: 1px solid #d3dbe2; border-radius: 3px; margin: 0px; float: left; color: #479ccf;
+				&:hover{ background: #f9f9f9}
+			}
+		}
+
+		.btn-import{
+			cursor: pointer; padding: 6px 15px; border: 1px solid #d3dbe2; border-radius: 3px 0px 0px 3px;margin: 0px; float: left; color: #479ccf;
+			&:hover{ background: #f9f9f9}
+		}
+		.btn-import-left{ border-radius: 3px 0px 0px 3px; border-right: 0px}
+		.btn-import-right{ border-radius: 0px 3px 3px 0px;}
+
+		.btn-add{
+			cursor: pointer; margin-left: 10px; border-radius: 3px; color: #fff; background: #479ccf;padding: 6px 15px; float: left;
+			&:hover{ background: #3b91c5}
+		}
+	}/* --- end right-header --- */
+
+	/* --- right-box --- */
+	.right-box{
+		float: left; width: 100%; margin: 0px; padding: 85px 20px 10px 20px; background: #ebeef0; min-height: 800px;
+		.content-right-box{
+			background-color: white; border-radius: 3px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: #31373d; float: left; width: 100%;
+
+			// css list.
+			.title-right-box{
+				width: 100%; float: left; height: 45px; border-bottom: 1px solid #ebeef0; background: #f5f6f7; position: relative;
+				h4{ font-size: 14px; line-height: 45px; background: #fff; position: absolute; top: 0px; left: 0px; z-index: 20; padding: 0px 20px; border-right: 1px solid #ebeef0; margin: 0px}
+				.ss-view{
+					line-height: 45px; margin-right: 20px; color: #747a7f;
+					.select-wp{
+						float: left; padding: 11px 0px 11px 6px; position: relative; line-height: 15px;
+						select{
+							border-color: #d3dbe2; padding: 2px 15px 2px 2px; outline: none; float: left; width: 100%; cursor: pointer;
+							option{ color: #333}
+						}
+						
+						i{ position: absolute; top: 16px; right: 7px; pointer-events: none;}
+					}
+				}
+			}
+
+			.box-search{
+				width: 100%; float: left; padding: 20px;
+				.form-search{
+					width: 100%; float: left; border: 1px solid #d3dbe2; height: 35px; border-radius: 2px;
+					span{ line-height: 34px; color: #479ccf; padding: 10px 20px 10px 20px; border-right: 1px solid #d3dbe2}
+					input{ width: 70%; border:0px ;outline: none; padding: 7px 10px 6px 10px}
+				}
+				
+				.select-wp{
+					float: left; position: relative; border-right: 1px solid #d3dbe2; max-width: 18%;
+					select{
+						border: 0px; padding: 7px 15px 6px 10px; outline: none; float: left; width: 100%; cursor: pointer;
+						option{ color: #333}
+					}
+					
+					i{ position: absolute; top: 10px; right: 7px; pointer-events: none;}
+				}
+			}
+
+			.content-table{
+				width: 100%; float: left; padding: 0px 20px; position: relative;
+				thead tr th{ font-weight: 100; border: 0px; text-align: center; line-height: 22px}
+				tr td{ color: #747a7f; text-align: center; line-height: 22px}
+				.select-all{
+					border: 1px solid #d3dbe2; padding: 3px 10px 5px 10px; border-radius: 3px;
+					i.fa{ margin-top: 2px; margin-left:2px;}
+				}
+
+				.xl-select-all{
+					position: absolute; top:0px; left: 0px; width: 100%; z-index: -1; background: #fff;margin: 0px ;padding: 0px 20px 7px 20px; color: #747a7f;
+					.tt-checkbox{
+						padding: 0px 9px; border: 1px solid #d3dbe2; float: left; border-radius: 3px 0px 0px 3px; line-height: 28px;
+						input{ margin-top: 7px; float: left;; margin-right: 4px}
+					}
+
+					.del-ngl{
+						float: left; line-height: 28px; border: 1px solid #d3dbe2; border-left: 0px; border-radius: 0px 3px 3px 0px; padding: 0px 9px; cursor: pointer;
+						&:hover{ background: #EC2C2C; color: #fff; border-color: #EC2C2C }
+					}
+					p{ float: left; margin: 0px; padding: 0px; padding-left: 10px; line-height: 30px; color: #D07474}
+				}
+				.xl-select-all.select{z-index: 100;}
+			}
+
+			.table-striped>tbody>tr:nth-child(odd)>td, .right-content .right-box .table-striped>tbody>tr:nth-child(odd)>th{ background: #FCFBFB}
+
+			.phan-trang{
+				width: 100%; float: left;
+				ul{
+					float: left; margin-bottom: 20px;
+					li {
+						list-style: none; float: left; margin: 0px 3px;
+						a{
+							padding: 5px 10px; border: 1px solid #ddd; text-decoration: none; border-radius: 2px; color: #101010; font-size: 13px;
+							&:hover { border-color: #1d89cf;}
+						}
+					}
+
+					li.disabled a { background: #eeecec; pointer-events: none; cursor: default; }
+					li.active a { background: #1d89cf; color: #fff; border-color: #1d89cf; pointer-events: none;}
+				}
+			}
+		}
+	}
+}

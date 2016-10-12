@@ -1,0 +1,73 @@
+/* Reset */
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+	margin: 0; padding: 0; border: none; border-spacing: 0
+}
+
+/* Calendar Wrapper */
+.ui-datepicker {
+	display: none; width: 245px; padding: 0px; cursor: default; font-family: Tahoma; font-size: 12px; background: #fff; border-radius: 3px; border: 1px solid #dce0e0;
+
+	.ui-datepicker-header{ 
+		position: relative; padding: 7px 0px;
+		.ui-datepicker-title {
+			text-align: center; font-family: proxima-b; font-size: 15px; color: #565656;
+			.ui-datepicker-month{ 
+				
+			}
+
+			.ui-datepicker-year { padding-left: 8px;}
+		}
+
+		.ui-datepicker-prev,
+		.ui-datepicker-next {
+			position: absolute;top: 9px; padding: 5px; cursor: pointer;
+			span{
+				display: block; width: 9px; height: 16px; text-indent: -9999px; background-image: url(../images/icon_next.png);
+			}
+		}
+
+		.ui-datepicker-prev {
+			left: 10px; padding-left: 0; span { background-position: 0px 0px; }
+		}
+
+		.ui-datepicker-next {
+			right: 10px; padding-right: 0; span { background-position: 0px 8px; }
+		}
+	}
+
+	.ui-datepicker-calendar{
+		border-spacing: 0; border-collapse: collapse;
+		tr{
+			th{
+				border: 0px; padding: 0px; vertical-align: top; color: #82888a;
+				span{ padding: 5px 0px; float: left; text-align: center; width: 32px; font-weight: 100; font-family: proxima; font-size: 15px; color: #565656;}
+			}
+			
+			td {
+				border: 1px solid #ebeceb; padding: 0px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ebeceb; text-align: center;
+				a{ padding: 5px 0px; color: #565a5c; font-family: proxima; font-size: 14px}
+				span{ padding: 5px 0px; color: #dbe0e0; font-family: proxima; font-size: 14px}
+				.ui-state-default {
+					display: block; width: 34px; outline: none; text-decoration: none; border: 1px solid transparent;
+				}
+
+				.ui-state-active { color: #fff; background: #f15d4e; }
+
+				&:first-child{ border-left: 0px;}
+				&:last-child{
+					border-right: 0px; width: 35px;
+					a{ width: 33px}
+					span{ width: 33px; color: #dbe0e0}
+				}
+			}
+
+			td.ui-datepicker-other-month .ui-state-default { display: none; }
+			&:last-child td{ border-bottom: 0px;}
+		}
+	}	
+}
+

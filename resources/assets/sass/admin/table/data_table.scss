@@ -1,0 +1,71 @@
+$pm_color_input : #5bc0de;
+/* data table*/
+.data-table-wp{
+	width:100%; float: left; margin: 0px; padding: 20px;
+	.my-table{
+		margin-bottom: 40px; margin-right: 15px;
+		thead tr{
+			&:first-child td{ border-bottom: 0px; position: relative; padding-right:15px; color:#333; cursor: pointer; outline: none}
+		}
+
+		tr{
+			td{
+				line-height: 28px; font-size: 13px; color: #747a7f;
+				&:first-child{ border-left: 0px; text-align: center}
+				&:last-child{ border-right: 0px;}
+			}
+			&:first-child {
+				td{
+					border-bottom: 0px;
+					.fa{ color: #ddd}
+					.fa.fa-caret-up{ position: absolute; top: 7px; right: 5px}
+					.fa.fa-caret-down{ position: absolute; top: 17px; right: 5px}
+				}
+
+				td.sorting_asc .fa.fa-caret-up{ color: #343434 }
+				td.sorting_desc .fa.fa-caret-down{ color: #343434 }
+			}
+
+			td.view-center{ text-align: center;}
+		}
+	}
+
+	.dataTables_filter label{
+		color: #8e8e8e; margin: 0px 5px; font-size: 13px;
+		input{
+			border: 1px solid #ddd; padding: 5px 10px; margin-left: 5px; min-width: 240px; outline: none;
+			&:focus { border-color: $pm_color_input;}
+		}
+	}
+
+	.dataTables_paginate {
+		margin: 5px 10px 0px 0px; float: right;
+		ul{
+			li{
+				list-style: none; float: left; margin: 0px 3px;
+				a{
+					padding: 5px 10px; border: 1px solid #ddd; text-decoration: none; border-radius: 2px; color: #101010; font-size:13px;
+					&:hover{border-color: #1d89cf}
+				}
+			}
+
+			li.active a{ color: #fff; background: #1d89cf; border-color: #1d89cf}
+			li.disabled a{
+				background: #eeecec;
+				&:hover{ border-color: #ddd; cursor: not-allowed}
+			}
+		}
+	}
+	.dataTables_length label {
+		font-weight: normal; margin-bottom: 15px; font-size:13px; color: #8e8e8e; position: relative;
+		select { border: 1px solid #ddd; padding: 2px 10px 2px 2px; cursor: pointer; outline: none;
+			-webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;}
+		.fa{ position: absolute; top: 7px; right: 6px; pointer-events: none;}
+	}
+}
+p.header-table{
+	height: 40px ; line-height: 40px; text-transform: uppercase; font-weight: bold; font-size: 14px; background: #f6f6f6; margin: 0px; font-family: arial; color: #798c9c;
+	.fa{ margin: 0px 7px 0px 15px}
+}
